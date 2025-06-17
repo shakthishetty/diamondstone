@@ -1,0 +1,267 @@
+.Finishes {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    background: #1c1c1c; /* dark background */
+    margin-top: 5%;
+    max-width: 1920;
+height: 939px;
+top: 4015px;
+gap: 8px;
+padding-top: 120px;
+padding-right: 180px;
+padding-bottom: 120px;
+padding-left: 180px;
+
+  }
+  
+  .innerFinishes {
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 1560px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 2%;
+  }
+  
+  .paras h2 {
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+margin-bottom: 1%;
+  }
+  
+  .paras p {
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .finishesCard {
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    width: 100%;
+    max-width: 504px;
+    height: 255px;
+    border-radius: 6px; /* smooth round edges */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.15); /* subtle white border */
+    transition: transform 0.3s ease;
+    padding: 8px;
+  }
+  
+  .finishesCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* slight divider effect */
+    border-radius: 5px;
+  }
+  
+  .finishesCard .label h4{
+    font-family: 'Rajdhani';
+font-weight: 500;
+font-size: 23px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+position: relative;
+top: 15px;
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .paras h2 {
+        font-family: 'Rajdhani';
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+    z-index: 5 !important; /* Ensure it appears above other elements */
+    right: 36%;
+      }
+
+    .paras {
+      display: block !important;
+      width: 100% !important;
+      margin: 0 auto 20px auto !important;
+      padding: 0 15px !important;
+      position: relative !important;
+      text-align: center !important;
+    }
+    
+    .paras p {
+      display: block !important;
+      width: 100% !important;
+      font-family: 'Inter';
+      font-weight: 400;
+       font-size: 12px;
+       line-height: 20px;
+    letter-spacing: 0%;
+    position: relative;
+    right: 1%;
+
+    }
+    .elevate{
+        position: relative;
+        right: 10% !important;
+    }
+
+    .polished{
+      position: relative;
+      right: 2% !important;
+    }
+
+
+    .elegance{
+       /* border: 2px solid red; */
+       position: relative;
+       right: 39% !important;
+    } 
+
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        max-width: 408px !important;
+        width: 100%;
+        box-sizing: border-box;
+
+
+      }
+
+      
+
+      
+      .finishesCard .label h4{
+        font-family: 'Rajdhani';
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: -2%;
+text-transform: capitalize;
+
+      }
+   
+  }
+
+/* Larger tablets and smaller desktops */
+@media screen and (max-width: 1200px) {
+  .Finishes {
+    padding: 90px 60px;
+    height: auto;
+  }
+  
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .Finishes {
+    padding: 80px 40px;
+    height: auto;
+  }
+  
+  .paras h2 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  .Finishes {
+    padding: 60px 20px;
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .innerFinishes {
+    gap: 24px;
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .finishesCard {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .finishesCard img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .finishesCard .label {
+    padding: 8px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .finishesCard .label h4 {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.2;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .Finishes {
+    padding: 40px 15px;
+  }
+  
+  .grid2 {
+    gap: 10px;
+    max-width: 300px;
+  }
+  
+  .paras h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .finishesCard img {
+    height: 120px;
+  }
+}
+

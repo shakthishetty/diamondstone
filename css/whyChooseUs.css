@@ -1,0 +1,273 @@
+.whyChooseUs {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    padding: 120px 180px;
+    box-sizing: border-box;
+}
+
+.containerChoose {
+    /* border: 2px solid red; */
+    max-width: 1560px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.innerChoose {
+    /* border: 2px solid red; */
+    max-width: 571px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.lastContainer {
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 571px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.paraContainer {
+    width: 100%;
+    height: auto;
+}
+
+.paraContainer p {
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(58, 58, 58, 1);
+    margin: 0;
+}
+
+.paraContainer1 {
+    width: 100%;
+    height: auto;
+}
+
+.paraContainer1 p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(58, 58, 58, 1);
+    margin: 0;
+}
+
+.lastContainer1 {
+    /* border: 2px solid red; */
+    width: 232px;
+    height: auto;
+    padding: 6px 17px;
+    border-radius: 4px;
+    margin-top: 60px;
+}
+
+.imageContainer {
+    width: 195px;
+    height: 72px;
+    background-image: url('../assets/images/diamondStone (2).png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.innerChoose1 {
+    /* border: 2px solid red; */
+    max-width: 767px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.timeLess {
+    /* border: 2px solid red !important; */
+    width: 100%;
+    height: 338px;
+    padding: 26px;
+    border: 1px solid rgba(58, 58, 58, 0.2);
+    border-radius: 5px;
+    position: relative;
+}
+
+.innerTimeLess {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.innerTimeLess1 {
+    width: 100%;
+    height: auto;
+}
+
+.innerTimeLess1 p {
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(58, 58, 58, 1);
+    margin: 0;
+}
+
+.innerTimeLess2 {
+    width: 100%;
+    height: auto;
+}
+
+.innerTimeLess2 p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(58, 58, 58, 1);
+    margin: 0;
+}
+
+.number {
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 26px;
+    top: 80%;
+}
+
+.number p {
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(2, 125, 106, 1);
+    margin: 0;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 1024px) {
+    .whyChooseUs {
+        padding: 100px 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .whyChooseUs {
+        padding: 80px 40px;
+    }
+    
+    .containerChoose {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .innerChoose {
+        max-width: 100%;
+        gap: 24px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .lastContainer {
+        align-items: center;
+    }
+
+    .lastContainer1{
+        margin-right: 40%;
+    }
+    
+    .paraContainer p {
+        font-size: 42px;
+    }
+    
+    .paraContainer1 p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .timeLess {
+        padding: 20px;
+        height: 200px;
+    }
+    
+    .innerTimeLess1 p {
+        font-size: 24px;
+    }
+    
+    .innerTimeLess2 p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .number {
+        position: relative;
+        left: 90%;
+        top: 80% ;
+        margin-top: 40px;
+    }
+    
+    .number p {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .whyChooseUs {
+        padding: 60px 20px;
+    }
+    
+    .paraContainer p {
+        font-size: 32px;
+    }
+    
+    .paraContainer1 p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .lastContainer1 {
+        width: 200px;
+    }
+    
+    .imageContainer {
+        width: 160px;
+        height: 60px;
+    }
+    
+    .timeLess {
+        padding: 16px;
+    }
+    
+    .innerTimeLess1 p {
+        font-size: 20px;
+    }
+    
+    .innerTimeLess2 p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    .number {
+        right: 16px;
+        top: 16px;
+    }
+    
+    .number p {
+        font-size: 32px;
+    }
+}

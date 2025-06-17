@@ -1,0 +1,993 @@
+.certificate{
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 1920px;
+height: 1501px;
+top: 6754px;
+gap: 120px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.certificateContainer{
+    border: 1px solid rgba(58, 58, 58, 0.2);
+    width: 100%;
+    max-width: 1560px;
+height: 259px;
+gap: 120px;
+border-radius: 6px;
+border-width: 1px;
+padding: 56px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.innerCertificate{
+    /* border: 2px solid blue; */
+    width: 664px;
+height: 147px;
+gap: 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.innerCertificate1{
+    /* border: 2px solid blue; */
+    width: 664px;
+height: 133px;
+gap: 8px;
+
+}
+
+.qManagement{
+    /* border: 2px solid blue; */
+    width: 142px;
+    height: 147px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.eManagement{
+    /* border: 2px solid blue; */
+    width: 192px;
+height: 147px;
+gap: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.oh{
+    /* border: 2px solid blue; */
+    width: 196px;
+height: 147px;
+gap: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.qeoimage{
+    /* border: 2px solid red; */
+    width: 120px;
+height: 120px;
+
+}
+
+.qeoimage{
+    width: 120px;
+height: 120px;
+}
+
+.qpara{
+    /* border: 2px solid red; */
+    width: 142px;
+height: 19px;
+
+}
+
+.qpara p{
+    font-family: 'Inter';
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+font-size: small;
+
+}
+
+.epara{
+    /* border: 2px solid red; */
+    width: 192px;
+height: 19px;
+
+}
+
+.epara p{
+    font-family: 'Inter';
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+font-size: small;
+
+}
+
+.ohpara{
+    /* border: 2px solid red; */
+    width: 196px;
+height: 19px;
+
+}
+
+.ohpara p{
+    
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(58, 58, 58, 1);
+    font-size: small;
+}
+
+
+.lastCertificate{
+    /* border: 2px solid red; */
+    width: 664px;
+height: 61px;
+
+}
+
+.lastCertificate h2{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.paraCertificate{
+    /* border: 2px solid red; */
+    width: 664px;
+height: 64px;
+
+}
+
+.paraCertificate p {
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+
+
+/* //project */
+
+.project{
+  
+    width: 100%;
+    max-width: 1920px;
+height: 1122px;
+gap: 32px;
+padding-top: 120px;
+padding-right: 180px;
+padding-bottom: 120px;
+padding-left: 180px;
+background-color: rgba(247, 246, 243, 1);
+
+}
+
+.projectContainer{
+   
+   
+    width: 100%;
+    max-width: 1560px;
+height: 794px;
+gap: 56px;
+display: flex;
+flex-direction: column;
+position: relative;
+right: 4%;
+
+
+}
+
+.para_project{
+  
+    width: 100%;
+    max-width: 1560px;
+height: 61px;
+justify-content: space-between;
+
+}
+
+.projects{
+   
+    width: 158px;
+height: 61px;
+display: flex;
+justify-content: start;
+align-items: center;
+
+}
+
+.projects h2{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+position: relative;
+right: 15px;
+
+
+}
+.card_project{
+  
+    width: 100%;
+    max-width: 1560px;
+    height: 677px;
+    gap: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible; /* Keeps content visible outside container */
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    position: relative; /* For positioning context */
+    transition: transform 0.3s ease; /* Smooth animation for transform */
+}
+
+.card_project1{
+   
+    width: 544px;
+    height: 677px;
+    gap: 24px;
+    padding-bottom: 24px;
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card_image{
+ 
+    width: 544px;
+height: 570px;
+border-radius: 6px;
+overflow: hidden; /* Hide overflow when image zooms */
+
+}
+
+.card_image img{
+    width: 544px;
+    height: 570px;
+    border-radius: 6px;
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
+
+/* Zoom effect on hover */
+.card_image:hover img {
+    transform: scale(1.1); /* Scale to 110% of original size */
+}
+
+.card_para{
+    
+    width: 544px;
+height: 59px;
+justify-content: space-between;
+display: flex;
+
+}
+
+
+.inner_card_para{
+   
+    width: 278px;
+height: 59px;
+gap: 4px;
+
+}
+
+.inner_card_para1{
+    
+    width: 266px;
+height: 59px;
+flex-direction: column;
+display: flex;
+justify-content: space-between;
+align-items: end;
+
+}
+
+.para_card{
+ 
+    width: 278px;
+height: 31px;
+
+}
+
+.para_card h4{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.text_card p{
+    font-family: 'Inter';
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+.para_card1{
+
+    width: 91px;
+height: 24px;
+opacity: 0.8;
+gap: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.para_card2{
+   
+    width: 110px;
+height: 24px;
+opacity: 0.8;
+gap: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+.text_card{
+
+    width: 278px;
+height: 24px;
+opacity: 0.8;
+
+}
+
+
+
+.text_card1{
+  
+    width: 113px;
+height: 19px;
+
+}
+
+.locations{
+   
+    width: 20px;
+height: 20px;
+background-image: url('../assets/images/Group.png');
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.innerParaCard{
+   
+    width: 60px;
+height: 19px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.innerParaCard p{
+    font-family: 'Inter';
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.innerParaCard1{
+    width: 70px;
+height: 19px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+    
+}
+
+.innerParaCard1 p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+}
+.text_card1 p{
+    font-family: 'Inter';
+font-weight: 500;
+font-size: 13px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.arrow_controls {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 136px;
+height: 56px;
+gap: 24px;
+margin-left: 50%;
+margin-bottom: 10%;
+position: relative;
+bottom: 5%;
+}
+
+.left-arrow{
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    border-radius: 6px;
+    border: 1px solid #009379;
+    background-color: white;
+    color: #009379;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.right-arrow {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    border-radius: 6px;
+   
+    background-color: rgba(2, 125, 106, 1);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(2, 125, 106, 1)
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(2, 125, 106, 1);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .certificate {
+      padding: 30px 15px;
+      height: auto;
+    }
+  
+    .certificateContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 15px;
+      border-radius: 12px;
+      gap: 30px;
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Text content section */
+    .innerCertificate1 {
+      width: 100%;
+      order: 1; /* Show text first */
+      position: static; /* Remove relative positioning */
+    }
+    
+    .lastCertificate {
+      width: 100%;
+      text-align: center;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  
+    .lastCertificate h2 {
+      font-size: 28px;
+      line-height: 120%;
+    }
+  
+    .paraCertificate {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .paraCertificate p {
+      font-size: 14px;
+      width: 90%;
+      text-align: center;
+      line-height: 24px;
+    }
+  
+    /* Logo section */
+    .innerCertificate {
+      width: 100%;
+      order: 2; /* Show logos second */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* Changed from space-around for better distribution */
+      align-items: flex-start; /* Align items to top */
+      position: static; /* Remove relative positioning */
+      margin-top: 20px;
+      padding: 0 10px; /* Add horizontal padding */
+    }
+  
+    .qManagement,
+    .eManagement,
+    .oh {
+      width: 30%; /* Each takes about a third of the space */
+      max-width: 90px; /* Slightly reduced to prevent overlap */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px; /* Increased gap between image and text */
+    }
+  
+    .qeoimage {
+      width: 90px; /* Smaller logo */
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .qeoimage img {
+       
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  
+    /* Fix for overlapping text */
+    .qpara,
+    .epara,
+    .ohpara {
+      width: 100%;
+      height: auto;
+      margin-top: 8px;
+    }
+    
+    .qpara p,
+    .epara p,
+    .ohpara p {
+     
+      
+      margin: 0;
+      word-wrap: break-word; /* Ensure text wraps properly */
+      overflow-wrap: break-word;
+      hyphens: auto; /* Enable hyphenation */
+      font-family: 'Noto Sans';
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px)  {
+
+    .certificate {
+      padding: 60px 32px;
+      gap: 40px;
+      height: auto;
+      background-color: #f9f9f9;
+    }
+  
+    .certificateContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      height: auto;
+      padding: 40px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+  
+    .innerCertificate {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 700px;
+    }
+  
+    .qManagement,
+    .eManagement,
+    .oh {
+      width: auto;
+      min-width: 100px;
+    }
+  
+    .qeoimage {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto;
+    }
+  
+    .qpara p,
+    .epara p,
+    .ohpara p {
+      font-size: 13px;
+      line-height: 1.3;
+      margin-top: 6px;
+      color: #3a3a3a;
+    }
+  
+    .lastCertificate {
+      max-width: 600px;
+      width: 100%;
+    }
+  
+    .lastCertificate h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+  
+    .paraCertificate {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .paraCertificate p {
+      font-size: 16px;
+      line-height: 28px;
+      color: #555;
+    }
+  }
+  
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .project {
+        /* border: 2px solid red; */
+      padding: 60px 20px;
+      height: 100%;
+      position: relative;
+
+     
+    }
+  
+    .projectContainer {
+      flex-direction: column;
+      align-items: center;
+      right: 0;
+      gap: 32px;
+    }
+  
+    .para_project {
+      
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+    }
+  
+    .projects h2 {
+      font-size: 32px;
+      right: 0;
+    }
+  
+    .card_project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      overflow: visible;
+      gap: 32px;
+    }
+  
+    .card_project1 {
+      width: 100%;
+      max-width: 544px; /* Match desktop max width */
+      height: auto; /* Allow height to be proportional */
+      gap: 16px;
+    }
+  
+    .card_image {
+      width: 100%;
+      height: auto; /* Allow proportional height */
+      aspect-ratio: 544/570; /* Maintain desktop aspect ratio */
+      border-radius: 6px;
+    }
+    
+    .card_image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      object-fit: cover; /* Ensure image fills the container */
+    }
+  
+    .card_para {
+        display: flex;
+      /* flex-direction: column; */
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      gap: 16px;
+    }
+  
+    .inner_card_para,
+    .inner_card_para1 {
+      width: 100%;
+      align-items: flex-start;
+    }
+      
+
+    .locations{
+        position: relative;
+        left: 25%;
+    }
+
+
+      .innerParaCard{
+        position: relative;
+        /* border: 2px solid red; */
+        left: 25%;
+      }
+    .innerParaCard1{
+        /* border: 2px solid red; */
+        width: 100px;
+        position: relative;
+        left: 23%;
+        
+    }
+  
+    .para_card{
+        width: 130%;
+        /* border: 2px solid red; */
+    }
+
+    .para_card h4{
+        font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+    }
+  
+    
+    .para_card1,
+    .para_card2 {
+      width: 100%;
+      /* border: 2px solid red; */
+
+    }
+
+    .text_card{
+       width: 120%;
+       /* border: 2px solid red; */
+
+    }
+
+    .text_card p{
+        font-family: 'Inter';
+font-weight: 500;
+font-size: 13px;
+line-height: 24px;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+    }
+
+    .text_card1 p{
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: rgba(58, 58, 58, 1);
+        
+
+    }
+  
+    .text_card1{
+        /* border: 2px solid red; */
+             position: relative;
+             left: 48px !important;
+             bottom: 5px;
+    }
+    .arrow_controls {
+      margin-left: 0;
+      bottom: 0;
+      margin-top: 24px;
+      justify-content: center;
+    }
+
+    /* Hide arrow controls on mobile */
+    .arrow_controls {
+        display: none;
+    }
+    
+    /* Your existing mobile styles */
+    .text_card1 {
+        /* border: 2px solid red; */
+        position: relative;
+        left: 48px !important;
+        bottom: 5px;
+    }
+    
+    /* If you have any other mobile-specific card styling, keep it here */
+  }
+
+
+  /* Responsive CSS for .project section on tablets, iPads, and larger foldables */
+@media screen and (min-width: 768px) and (max-width: 1280px)
+{
+
+.project {
+padding: 60px 32px;
+height: auto;
+}
+
+.projectContainer {
+width: 100%;
+max-width: 100%;
+height: auto;
+gap: 40px;
+right: 0;
+padding: 0 16px;
+}
+
+.para_project {
+flex-direction: column;
+align-items: center;
+gap: 12px;
+}
+
+.projects h2 {
+font-size: 36px;
+text-align: center;
+right: 0;
+}
+
+.card_project {
+flex-wrap: wrap;
+justify-content: center;
+height: auto;
+gap: 32px;
+overflow: visible;
+}
+
+.card_project1 {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    padding-bottom: 16px;
+    margin: 0 auto; /* Center the cards */
+    box-sizing: border-box;
+  }
+
+.card_image,
+.card_image img {
+width: 100%;
+height: auto;
+max-height: 400px;
+}
+
+.card_image img {
+    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Or set height like 320px */
+  }
+
+.card_para {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0 12px; /* Add spacing to avoid edge overlap */
+  }
+  
+  .inner_card_para {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+  }
+  
+  .inner_card_para1 {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    width: auto;
+    padding-right: 8px; /* Prevent text from touching edge */
+  }
+  
+
+
+.arrow_controls {
+margin: 40px auto 0;
+bottom: 0;
+}
+
+.left-arrow,
+.right-arrow {
+width: 40px;
+height: 40px;
+font-size: 20px;
+}
+
+.para_card h4 {
+font-size: 20px;
+}
+
+.text_card p,
+.text_card1 p,
+.innerParaCard p,
+.innerParaCard1 p {
+font-size: 14px;
+}
+
+.para_card1,
+.para_card2 {
+gap: 6px;
+font-size: 14px;
+}
+}
+
+

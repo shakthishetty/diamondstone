@@ -1,0 +1,522 @@
+.address{
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 1920px;
+height: 970px;
+top: 8255px;
+gap: 32px;
+border-radius: 6px;
+padding-top: 120px;
+padding-right: 130px;
+padding-bottom: 130px;
+padding-left: 180px;
+display: flex;
+flex-direction: column;
+
+}
+
+.addressContainer{
+    /* border: 2px solid blue; */
+    width: 100%;
+    max-width: 1560px;
+height: 153px;
+gap: 80px;
+display: flex;
+/* justify-content: ; */
+
+
+}
+
+.addressContainer1{
+    /* border: 2px solid blue; */
+    max-width: 1560px;
+    width: 100%;
+height: 545px;
+gap: 8px;
+border-radius: 6px;
+background-image: url('../assets/images/image\ \(10\).png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+
+.innerAddress{
+    /* border: 2px solid blue; */
+    width: 526px;
+height: 96px;
+gap: 8px;
+display: flex;
+flex-direction: column;
+
+}
+
+
+.innerAddress1{
+    /* border: 2px solid blue; */
+    width: 890px;
+height: 153px;
+gap: 24px;
+border-radius: 6px;
+border-width: 1px;
+padding-top: 16px;
+padding-right: 24px;
+padding-bottom: 16px;
+padding-left: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+ border: 1px solid rgba(58, 58, 58, 0.2) 
+
+
+}
+
+.text_address{
+    /* border: 2px solid blue; */
+    width: 526px;
+height: 61px;
+
+}
+
+.para_address{
+    /* border: 2px solid blue; */
+    width: 526px;
+height: 27px;
+opacity: 0.9;
+
+}
+
+.address_card{
+    /* border: 2px solid red; */
+    width: 458px;
+height: 121px;
+gap: 8px;
+display: flex;
+flex-direction: column;
+
+}
+
+.address_card1{
+    /* border: 2px solid red; */
+    width: 200px;
+height: 63px;
+gap: 8px;
+display: flex;
+flex-direction: column;
+
+}
+
+.address_card2{
+    /* border: 2px solid red; */
+    width: 200px;
+height: 63px;
+gap: 8px;
+display: flex;
+flex-direction: column;
+
+}
+
+.inner_address_card{
+    /* border: 2px solid blue; */
+    width: 458px;
+height: 31px;
+
+}
+
+.inner_address_card1{
+    /* border: 2px solid blue; */
+    width: 458px;
+height: 22px;
+opacity: 0.9;
+
+}
+
+.inner_address_card1{
+  
+        /* border: 2px solid blue; */
+    width: 458px;
+height: 22px;
+opacity: 0.9;
+
+}
+
+.inner_address_card1{
+    /* border: 2px solid blue; */
+    width: 458px;
+    height: 22px;
+    opacity: 0.9;
+    
+
+}
+
+.phone{
+    /* border: 2px solid blue; */
+    width: 62px;
+height: 31px;
+
+}
+
+.phoneNumber{
+    /* border: 2px solid blue; */
+    width: 123px;
+height: 24px;
+opacity: 0.9;
+
+}
+
+.email{
+    /* border: 2px solid blue; */
+    width: 54px;
+height: 31px;
+
+}
+
+.emails{
+    /* border: 2px solid blue; */
+    width: 192px;
+height: 24px;
+opacity: 0.9;
+
+}
+
+
+.text_address h2{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 45px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+}
+
+.para_address{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.inner_address_card p{
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(58, 58, 58, 1);
+    
+}
+
+.inner_address_card1 p{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.phone p{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.phoneNumber p{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.email p{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+.emails p{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+}
+
+@media screen and (min-width: 412px) and (max-width: 416px) {
+    .address {
+      /* border: 2px solid red !important; */
+      height: auto;
+      padding: 60px 20px;
+      position: relative;
+      top: 1050px !important;
+      margin-top: 60px;
+    }
+  }
+
+ @media screen and (min-width: 428px) and (max-width: 432px){
+    .address {
+        border: 2px solid red !important;
+        height: auto;
+        padding: 60px 20px;
+        position: relative;
+        top: 1050px !important;
+        margin-top: 120px;
+      }
+    }
+ 
+
+
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .address {
+        /* border: 2px solid red !important; */
+        height: auto;
+        padding: 60px 20px;
+        position: relative;
+        top: 1050px !important;
+       
+    }
+    
+    .addressContainer {
+       
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+        position: relative;
+     
+    }
+    
+    .innerAddress {
+        width: 100%;
+        height: auto;
+    }
+    
+    .text_address {
+        width: 100%;
+        height: auto;
+    }
+    
+    .text_address h2 {
+        font-size: 24px;
+        text-align: start;
+    }
+    
+    .para_address {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .para_address p{
+        /* border: 2px solid red; */
+        font-family: 'Inter';
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+white-space: nowrap;
+
+    }
+    
+    .innerAddress1 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        border: 1px solid rgba(58, 58, 58, 0.2)
+    }
+    
+    .address_card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .address_card1,
+    .address_card2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .inner_address_card,
+    .inner_address_card1 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .inner_address_card p{
+        text-align: start;
+    }
+
+    .inner_address_card1 p{
+          text-align: start;
+    }
+    
+    .phone,
+    .email {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .phone p {
+        text-align: start;
+    }
+
+    .phoneNumber p{
+        text-align: start;
+    }
+
+    .email p{
+        text-align: start;
+    }
+
+    .emails p{
+        text-align: start;
+    }
+    
+    .phoneNumber,
+    .emails {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .addressContainer1 {
+        width: 100%;
+        height: 300px; /* Reduced height for mobile */
+        background-position: center;
+    }
+    
+    /* Adjust font sizes for better mobile readability */
+    .inner_address_card p {
+        font-size: 20px;
+    }
+    
+    .inner_address_card1 p,
+    .phoneNumber p,
+    .emails p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    /* Center all content on mobile */
+    .address_card,
+    .address_card1,
+    .address_card2 {
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .address {
+        /* border: 2px solid red; */
+      padding: 60px 40px;
+      height: auto;
+      gap: 48px;
+    }
+  
+    .addressContainer {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+  
+    .addressContainer1 {
+        /* border: 2px solid red; */
+      height: auto;
+      min-height: 400px;
+      border-radius: 6px;
+      margin-top: 40%;
+    }
+  
+    .innerAddress {
+      width: 100%;
+      max-width: 600px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text_address,
+    .para_address {
+      width: 100%;
+      max-width: 600px;
+    }
+  
+    .innerAddress1 {
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      padding: 24px;
+      gap: 16px;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  
+    .address_card {
+      width: 100%;
+      max-width: 600px;
+      gap: 16px;
+    }
+  
+    .address_card1,
+    .address_card2 {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .inner_address_card,
+    .inner_address_card1 {
+      width: 100%;
+    }
+  
+    .phone,
+    .email,
+    .phoneNumber,
+    .emails {
+      width: auto;
+      height: auto;
+    }
+  
+    .text_address h2 {
+      font-size: 36px;
+    }
+  
+    .para_address,
+    .inner_address_card1 p,
+    .emails p,
+    .phoneNumber p {
+      font-size: 14px;
+    }
+  
+    .inner_address_card p,
+    .phone p,
+    .email p {
+      font-size: 20px;
+    }
+  }
+  
+

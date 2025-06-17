@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter";
+    
+  }
+  
+.header{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-right: 180px;
+    padding-bottom: 8px;
+    padding-left: 180px;
+    background-color: rgba(2, 125, 106, 1);
+    gap:6%;
+   
+}
+
+.container1{
+    /* border: 2px solid blue; */
+width: 390px;
+height: 17px;
+gap: 8px;
+display: flex;
+justify-content: center;
+
+}
+.innerContainer{
+    /* border: 2px solid red; */
+    width: 317px !important;
+height: 17px;
+}
+
+
+.innerContainer1{
+    /* border: 2px solid yellow; */
+    width: 191px;
+height: 17px;
+
+}
+
+.innerContainer2{
+    /* border: 2px solid yellow; */
+    width: 164px;
+height: 17px;
+
+}
+
+.innerContainer3{
+    /* border: 2px solid yellow; */
+    width: 206px;
+height: 17px;
+
+}
+
+
+.para{
+font-family: 'Inter';
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+font-size: small;
+
+}
+
+.para1{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+font-size: small;
+color: rgba(255, 255, 255, 1);
+
+}
+
+.para2{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+font-size: small;
+
+}
+
+
+.para3{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+font-size: small;
+}
+
+.para-mobile {
+    display: none; /* Hidden by default on desktop */
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+   
+
+   
+    .header{
+        /* border: 2px solid red; */
+        max-width: 440px;
+        width: 100%;
+
+      height: 24px;
+        gap: 154px;
+padding-top: 4px;
+padding-right: 16px;
+padding-bottom: 4px;
+padding-left: 16px;
+
+    }
+
+
+    .innerContainer{
+        width: 308px;
+height: 14px;
+
+    }
+
+    .para {
+        display: none; /* Hide company name on mobile */
+    }
+    
+    .para-mobile {
+        /* border: 2px solid yellow; */
+        display: block; /* Show address on mobile */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 270px;
+        position: relative;
+        padding-right: 15px; /* Space for the arrow */
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-left: 15%;
+        color: rgba(255, 255, 255, 1);
+
+
+    }
+
+
+   
+
+    .para-mobile::after {
+        content: "";
+        position: absolute;
+        width: 10px; /* Increased from 9.33px */
+        height: 8px; /* Increased from 4.66px */
+        top: 2px; /* Adjusted to align properly */
+        left: 95%; /* Moved slightly left to ensure visibility */
+        
+        /* Set appropriate height for your icon */
+        background-image: url('../assets/fonts/Stroke\ 1.png'); /* Path to your arrow image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        /* Optional: add a transform to increase visibility */
+        transform: scale(1.2);
+    }
+
+   
+
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 780px),
+       screen and (width: 768px) {
+    /* Apply mobile header styling to iPad */
+    .header {
+        max-width: 800px !important;
+        width: 100% !important;
+        height: 24px !important;
+        gap: 154px !important;
+        padding-top: 4px !important;
+        padding-right: 16px !important;
+        padding-bottom: 4px !important;
+        padding-left: 16px !important;
+    }
+
+    .innerContainer {
+        width: 308px !important;
+        height: 14px !important;
+    }
+
+    .para,.para1 {
+        display: none !important; /* Hide company name on mobile */
+    }
+    
+    .para-mobile {
+         /* border: 2px solid red; */
+        display: block !important; /* Show address on mobile */
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: 400% !important;
+        position: relative !important;
+        padding-right: 15px !important; /* Space for the arrow */
+        font-family: 'Inter' !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        /* margin-left: 15% !important; */
+        color: rgba(255, 255, 255, 1) !important;
+        left: 60%;
+    }
+
+    .para-mobile::after {
+        content: "" !important;
+        position: absolute !important;
+        width: 10px !important; /* Increased from 9.33px */
+        height: 8px !important; /* Increased from 4.66px */
+        top: 2px !important; /* Adjusted to align properly */
+        left: 95% !important; /* Moved slightly left to ensure visibility */
+        background-image: url('../assets/fonts/Stroke\ 1.png') !important; /* Path to your arrow image */
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transform: scale(1.2) !important;
+    }
+    
+    /* Hide any other elements you don't want to show */
+    .headerContainer3,
+    .header-right,
+    .header-social,
+    .header-phone,
+    .header-email {
+        display: none !important;
+    }
+}
+       
+
+
+

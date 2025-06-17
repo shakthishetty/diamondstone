@@ -1,0 +1,685 @@
+.slider{
+    /* border: 2px solid red; */
+    width: 100%;
+height: 600px;
+top: 113px;
+display: flex;
+align-items: center;
+background-image: url('../assets/images/sliderMarbleImage.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+.sliderContainer{
+    /* border: 2px solid blue; */
+    width: 768px;
+height: 318px;
+/* margin-top: 6%; */
+left: 180px;
+gap: 32px;
+margin-left: 100px;
+
+
+}
+
+
+.sliderCon{
+    /* border: 2px solid red; */
+    width: 768px;
+height: 224px;
+gap: 8px;
+
+}
+
+.btn1{
+    /* border: 2px solid red; */
+    width: 245px;
+height: 62px;
+gap: 8px;
+padding-top: 20px;
+padding-right: 40px;
+padding-bottom: 20px;
+padding-left: 40px;
+border-radius: 6px;
+margin-top: 25px;
+cursor: pointer;
+background-color: rgba(2, 125, 106, 1);
+border: none;
+}
+
+.explorebtn{
+    /* border: 2px solid red; */
+    width: 165px;
+height: 22px;
+cursor: pointer;
+
+}
+
+.explorebtn p {
+    font-family: 'Inter';
+font-weight: 500;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: -2%;
+color: rgba(255, 255, 255, 1);
+cursor: pointer;
+
+
+}
+
+.sentence{
+    /* border: 2px solid yellow; */
+    width: 768px;
+height: 184px;
+
+}
+
+.sentence h1{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 72px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+
+}
+
+.sentence h1 span {
+
+    display: block;
+     /* Makes each span appear on its own line */
+}
+
+.second-line{
+    margin-top: 1.5%;
+}
+
+.sentence1{
+    /* border: 2px solid yellow; */
+    width: 730px;
+height: 32px;
+
+}
+
+.sentence1 p{
+    font-family: 'Inter';
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+
+}
+
+
+
+.download {
+    position: absolute;
+    width: 398px; /* More reasonable width */
+    height: 136px; /* Height should adjust to content */
+    /* max-height: 80px; */
+    margin-left: 70%;
+    border-radius: 6px !important;
+    margin-top: 10%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+    background-color: transparent;
+    backdrop-filter: blur(80px);
+    /* border: 2px solid red; */
+    
+    
+  }
+
+.image{
+    /* border: 2px solid red; */
+    width: 136px;
+height: 136px;
+background-image: url('../assets/images/downldImage.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+.dnld{
+      /* border: 2px solid red; */
+      width: 262px;
+height: 64px;
+gap: 8px;
+padding-right: 24px;
+padding-left: 24px;
+
+}
+
+.innerDnld{
+    /* border: 2px solid red; */
+    width: 214px;
+height: 64px;
+gap: 9px;
+
+}
+
+.innerDnld1{
+    /* border: 2px solid red; */
+    width: 214px;
+height: 31px;
+
+}
+
+.innerDnld1 p{
+    font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.icons{
+    /* border: 2px solid red; */
+    width: 119.84615325927734px;
+height: 24px;
+opacity: 0.8;
+gap: 8.85px;
+display: flex;
+}
+
+.icons1{
+    /* border: 2px solid yellow; */
+    width: 24px;
+height: 24px;
+background-image: url('../assets/images/Download.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin-right: 4%;
+
+}
+
+.thePara{
+    /* border: 2px solid red; */
+    width: 87px;
+height: 24px;
+
+}
+
+.thePara{
+    font-family: 'Inter';
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      
+      }
+
+
+
+    .slider {
+        /* border: 2px solid red; */
+        width: 100%;
+        max-width: 440px;
+        height: 581px;
+        top: 88px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        
+    }
+
+  
+    .sliderContainer {
+       /* border: 2px solid red; */
+       width: 100%;
+       max-width: 408px;
+       height: 295px;
+     
+       gap: 32px;
+       margin-left: 16px;
+       margin-top: 295px;
+       margin-bottom: 20%;
+       
+       
+    }
+
+
+    .sliderCon{
+        /* border: 2px solid red; */
+        width: 408px;
+height: 214px;
+gap: 8px;
+
+    }
+   
+  
+    .sentence {
+      width: 100%;
+      height: auto;
+    }
+  
+    .sentence h1 {
+        font-family: 'Rajdhani';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0%;
+        color: rgba(255, 255, 255, 1);
+        
+    }
+  
+    .sentence1 {
+        /* border: 2px solid red; */
+        width: 296px;
+        height: 38px;
+         margin-top: 10px;
+        
+    }
+  
+    .sentence1 p {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: rgba(255, 255, 255, 1);
+        
+    }
+  
+    .btn1 {
+        width: 204px;
+        height: 49px;
+        border-radius: 6px;
+        gap: 8px;
+        padding-top: 16px;
+        padding-right: 32px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+        position: relative;
+        bottom: 10%;
+        
+    }
+  
+    .explorebtn p {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -2%;
+        
+    }
+  
+    .download {
+        /* border: 2px  solid red; */
+      position: static;
+      
+     top: 12px;
+      width: 93%;
+   
+      height: 99px;
+      flex-direction: row;
+      border-radius: 6px !important;
+       position: relative; 
+      /* right: 65%; */
+      /* bottom: 5%;  */
+      margin-left: 16px;
+      border-width: 1px 1px 1px 0px;
+      border-style: solid;
+      border-color: rgba(58, 58, 58, 0.1);
+     
+
+
+      
+
+      /* padding: 12px; */
+    }
+  
+    .image {
+        width: 106px;
+        height: 99px;
+        margin-right: 10%;
+    }
+  
+    .dnld {
+    
+    
+      /* border: 2px solid red; */
+      position: relative;
+      right: 25px;
+      width: 270px;
+height: 51px;
+gap: 8px;
+
+    }
+  
+    .innerDnld, .innerDnld1 {
+        
+      width: auto;
+      height: auto;
+      position: relative;
+      right: 13px;
+    }
+
+
+  
+    .innerDnld1 p {
+       
+      font-family: 'Rajdhani';
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1) !important;
+
+    }
+  
+    .icons {
+      width: auto;
+      gap: 8px;
+    }
+  
+    .icons1 {
+        /* border: 2px solid red; */
+      width: 20px;
+      height: 20px;
+       position: relative;
+       left: 35%;
+       
+    }
+  
+    .thePara {
+        /* border: 2px solid red; */
+      font-size: 13px;
+      line-height: 20px;
+      position: relative;
+      right: 25%;
+    }
+
+    .sentence h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+    
+    .first-line {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    .second-line {
+        display: block;
+    }
+    
+    /* Create line break before "Confidence" */
+    .second-line::after {
+        content: '\A Confidence';
+        white-space: pre;
+    }
+    
+    /* Hide the original "Confidence" text */
+    .second-line {
+        text-align: left;
+    }
+    
+    .second-line span:last-child {
+        visibility: hidden;
+        height: 0;
+    }
+  }
+
+ 
+
+
+   
+  @media screen and (min-width: 760px) and (max-width: 780px), screen and (width: 768px) 
+  
+  {
+
+    .slider {
+      height: 500px;
+      background-position: center top;
+      background-size: cover;
+      padding: 0 24px;
+    }
+  
+    .sliderContainer {
+      width: 100%;
+      margin-left: 0;
+      padding: 0 24px;
+      gap: 24px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .sliderCon {
+      width: 100%;
+      height: auto;
+      gap: 6px;
+    }
+  
+    .btn1 {
+      width: 100%;
+      max-width: 220px;
+      height: 56px;
+      padding: 16px 32px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  
+    .explorebtn p {
+      font-size: 14px;
+    }
+
+    .sentence {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px; /* Add slight spacing */
+      }
+      
+  
+      .sentence h1 {
+        font-size: 48px;
+        line-height: 110%;
+        margin: 0; /* Remove extra space below heading */
+      }
+      
+      .sentence1 {
+        margin-top: 0px; /* Ensure no large gap above paragraph */
+      }
+      .sentence1 p {
+        font-size: 14px;
+        line-height: 22px; /* Slightly tighter */
+        margin: 0; /* Remove default paragraph spacing */
+      }
+  
+    /* ↓↓↓ FINAL OPTIMIZED DOWNLOAD ↓↓↓ */
+    .download {
+      width: 300px;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 24px;
+      padding: 12px;
+      border-radius: 6px;
+      position: relative;
+      left: 50%;
+      top: 17%;
+      transform: translateX(-210%);
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 12px;
+      backdrop-filter: blur(40px);
+    }
+  
+    .image {
+      width: 64px;
+      height: 64px;
+      background-size: contain;
+      flex-shrink: 0;
+    }
+  
+    .dnld {
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
+  
+    .innerDnld {
+      width: 100%;
+      gap: 4px;
+    }
+  
+    .innerDnld1 p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .icons {
+      gap: 6px;
+      align-items: center;
+    }
+  
+    .icons1 {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+    }
+  
+    .thePara {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  
+
+
+  @media screen and (min-width: 912px) and (max-width: 920px) {
+ 
+   
+    .slider {
+      height: 540px;
+      padding: 0 32px;
+      background-position: center top;
+      background-size: cover;
+    }
+  
+    .sliderContainer {
+      width: 100%;
+      padding: 0 32px;
+      gap: 24px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .sliderCon {
+      width: 100%;
+      height: auto;
+      gap: 6px;
+      position: relative;
+      right: 13%;
+    }
+  
+    .btn1 {
+        border: 2px solid red;
+      width: 100%;
+      max-width: 220px;
+      height: 56px;
+      padding: 16px 32px;
+      font-size: 15px;
+      margin-top: 20px;
+       position: relative;
+       right: 12%;
+    }
+  
+    .explorebtn p {
+      font-size: 14px;
+    }
+  
+    .sentence {
+      width: 100%;
+      height: auto;
+      margin-bottom: 4px;
+    }
+  
+    .sentence h1 {
+      font-size: 54px;
+      line-height: 110%;
+      margin: 0;
+    }
+  
+    .sentence1 {
+      margin-top: 0px;
+    }
+  
+    .sentence1 p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+    }
+  
+    .download {
+        width: 320px;
+        padding: 14px;
+        border-radius: 6px;
+        border: 2px solid red;
+      
+        position: relative;
+        /* ← Y-position on screen */
+        left: 50%; /* ← X-position on screen */
+        transform: translateX(-425%); /* Shift left as needed */
+      
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        top: 13%;
+        gap: 12px;
+        backdrop-filter: blur(40px);
+        z-index: 999;
+      }
+      
+  
+    .image {
+      width: 70px;
+      height: 70px;
+      background-size: contain;
+      flex-shrink: 0;
+    }
+  
+    .innerDnld1 p {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  
+    .icons1 {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+    }
+  
+    .thePara {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  

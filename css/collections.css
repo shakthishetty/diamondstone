@@ -1,0 +1,1009 @@
+/* Desktop Styles (unchanged from your original) */
+.collectionSection {
+  width: 100%;
+  min-height: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 130px;
+  position: relative;
+  bottom: 49px;
+  padding-bottom: 100px;
+}
+
+.collectionContainer {
+  width: 100%;
+  height: 547px;
+  background-image: url('../assets/images/Rectangle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.collectionContainer1, .collectionContainer2 {
+  width: 100%;
+  height: 365px;
+  background-image: url('../assets/images/Rectangle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.titleContainer {
+  width: 420px !important;
+  height: 61px !important;
+  max-height: 61px !important;
+  min-height: 61px !important;
+  margin-top: 5%;
+  display: block !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  position: relative;
+  line-height: 57px;
+}
+
+.titleContainer h2 {
+  font-family: 'Rajdhani';
+  font-weight: 600;
+  font-size: 47px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(58, 58, 58, 1);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.card, .card1, .card2 {
+  width: 90%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.card2 {
+  gap: 100px;
+  justify-content: flex-start;
+}
+
+.innerCard {
+  width: 308px;
+  height: 437px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.innerCard:hover {
+  transform: translateY(-5px);
+}
+
+.innerCard:hover .slant-overlay {
+  transform: rotate(10deg);
+}
+
+.imageCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: visible;
+  transition: transform 0.3s ease;
+}
+
+.slant-overlay {
+  position: absolute;
+  bottom: -1px;
+  right: -34px;
+  width: 140px;
+  height: 60px;
+  background: rgba(0, 0, 0, 1);
+  opacity: 0.05;
+  backdrop-filter: blur(8px);
+  clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
+  z-index: 2;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+  mask-image: linear-gradient(to right, transparent 0%, transparent 75%, black 51%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 75%, black 51%, black 100%);
+}
+
+.titleCard {
+  width: 100%;
+  text-align: center;
+  height: 31px;
+}
+
+.marble-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.marble-title {
+  font-family: 'Rajdhani';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(58, 58, 58, 1);
+}
+
+.buttonWrapper {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+.button {
+  width: 278px;
+  height: 62px;
+  padding: 20px 40px;
+  gap: 8px;
+  border-radius: 6px;
+  background-color: rgba(2, 125, 106, 1);
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #025f51;
+}
+
+/* Responsive Styles (only applied below desktop breakpoint) */
+@media (max-width: 1199px) {
+  .collectionSection {
+    min-height: auto;
+    gap: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .collectionContainer,
+  .collectionContainer1,
+  .collectionContainer2 {
+    height: auto;
+    min-height: auto;
+    padding: 30px 20px;
+  }
+  
+  .titleContainer {
+    width: 100% !important;
+    max-width: 420px;
+    margin-top: 30px;
+  }
+  
+  .titleContainer h2 {
+    font-size: 38px;
+  }
+  
+  .card, .card1, .card2 {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+  }
+  
+  .card2 {
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .innerCard {
+    width: 280px;
+    height: auto;
+    aspect-ratio: 308/437;
+  }
+  
+  .imageCard {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 300/400;
+  }
+  
+  .marble-title {
+    font-size: 22px;
+  }
+  
+  .slant-overlay {
+    right: -20px;
+    width: 120px;
+    height: 50px;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 991px) {
+  .collectionSection {
+    gap: 60px;
+  }
+  
+  .titleContainer h2 {
+    font-size: 32px;
+  }
+  
+  .card, .card1 {
+    justify-content: space-around;
+  }
+  
+  .innerCard {
+    width: 45%;
+    max-width: 280px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .collectionSection {
+      /* border: 2px solid red; */
+    padding: 16px;
+    gap: 32px;
+    margin-top: 47%;
+    min-height: 50vh !important;
+    height: auto;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+  }
+
+  .collectionContainer,
+  .collectionContainer1,.collectionContainer2 {
+      /* border: 2px  solid red; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: auto !important;
+    min-height: unset;
+    background-image: none;
+   
+  }
+  
+  .card2{
+    /* border: 2px solid red; */
+    margin-right: 17px;
+  }
+
+  .titleContainer {
+    width: 100% !important;
+    padding: 0 16px;
+    margin: 0 0 16px;
+    height: auto !important;
+    /* border: 2px  solid red; */
+    position: relative;
+    top: 10% !important;
+    
+  }
+
+  .titleContainer h2 {
+      font-family: 'Rajdhani';
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: capitalize;
+    position: relative;
+       right: 15%;
+       top: 30px;
+
+  }
+
+  .card, .card1,.card2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 16px;
+    padding: 0 16px;
+    margin-top: 0;
+  }
+
+  .card2 {
+    margin-left: 15px;
+  }
+
+  .innerCard {
+    /* border: 2px solid red; */
+    width: 100% !important;
+    max-width: none;
+    height: auto;
+    border-radius: 6px;
+    
+    overflow: hidden;
+    
+  }
+
+  .imageCard {
+    /* border: 2px solid red; */
+  
+    width: 100%;
+    max-width: 196px !important;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  .marble-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+  }
+
+  .titleCard {
+    height: auto;
+    text-align: start;
+  }
+
+  .marble-title {
+      font-family: 'Rajdhani';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: -2%;
+      text-transform: capitalize;
+      text-align:start;
+      color: rgba(0, 0, 0, 1) !important;
+      
+  }
+
+  .buttonWrapper {
+      position: absolute !important;
+      left: 0 !important;
+      right: 0 !important;
+      /* bottom: -90px !important; */
+      z-index: 999 !important;
+      text-align: center !important;
+      top: 95%;
+      border: none !important; /* Remove debug border */
+  }
+
+  .button {
+      width: 240px;
+      height: 49px;
+      top: 1656px;
+      left: 100.5px;
+      gap: 8px;
+      padding-top: 16px;
+      padding-right: 32px;
+      padding-bottom: 16px;
+      padding-left: 32px;
+      border-radius: 6px;
+      background-color: rgba(2, 125, 106, 1);
+      color: white;
+      font-family: 'Inter';
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+      
+  }
+
+  .button:hover {
+    background-color: #025f51;
+  }
+
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .card, .card1, .card2 {
+    gap: 15px;
+  }
+  
+  .marble-title {
+    font-size: 16px;
+  }
+  
+  .slant-overlay {
+    right: -10px;
+    width: 70px;
+    height: 30px;
+  }
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.popup-overlay.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  background-color: white;
+  width: 1138px;
+  height: 595px;
+  border-radius: 6px;
+  padding: 48px;
+  position: relative;
+}
+
+.popup-close {
+  /* border: 1.5px solid rgba(0, 0, 0, 1) !important; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 24px;
+  width: 24px !important;
+height: 24px !important;
+text-align: center;
+
+}
+
+.popup-content{
+  /* border: 2px solid red; */
+  width: 100%;
+height: 499px;
+gap: 16px;
+display: flex;
+
+}
+
+#popupTitle{
+  /* border: 2px solid red !important; */
+  width: 505px;
+height: 499;
+gap: 16px;
+display: flex;
+
+}
+
+#popupDescription{
+  /* border: 2px solid red !important; */
+  width: 505px;
+height: 499px;
+gap: 24px;
+
+}
+
+.popupImageCard{
+  /* border: 2px solid red !important; */
+  width: 57px;
+height: 264px;
+gap: 12px;
+
+}
+
+
+.popupImageCard1{
+  /* border: 2px solid red !important; */
+  width: 432px;
+height: 473px;
+border-radius: 6px;
+
+}
+
+.popup-full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.theDescriptionCard{
+  /* border: 2px solid red !important; */
+  width: 505px;
+height: 243px;
+gap: 24px;
+display: flex;
+flex-direction: column;
+
+}
+
+.innerDescription{
+  /* border: 2px solid red !important; */
+  width: 505px;
+height: 160px;
+gap: 32px;
+padding-bottom: 24px;
+border-bottom-width: 1px;
+margin-top: 10px;
+display: flex;
+}
+
+.marbleBtn{
+  margin-top: 10px;
+  /* border: 2px solid red !important; */
+  width: 505px;
+height: 48px;
+gap: 16px;
+display: flex;
+
+
+}
+
+.textureBtn {
+  /* border: 2px solid blue !important; */
+  width: 505px;
+  height: 48px;
+  gap: 8px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  border-radius: 6px;
+  
+  display: flex;                  /* Use flexbox */
+  align-items: center;           /* Vertically center */
+  justify-content: center;       /* Horizontally center */
+  gap: 8px;
+  padding: 0 40px;                /* Simplified padding */
+  border-radius: 6px;
+  background-color: rgba(2, 125, 106, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;   
+  white-space: nowrap;
+  border: none;
+
+}
+
+.textureBtn img {
+  width: 24px;
+  height: 24px;
+
+}
+
+
+
+.ElegantGray{
+  /* border: 2px solid red; */
+  width: 188px;
+height: 75px;
+
+}
+
+.plainPara{
+  /* border: 2px solid red; */
+  width: 505px;
+height: 144px;
+
+}
+
+.innerDesText{
+  /* border: 2px solid yellow; */
+  width: 100px;
+height: 136px;
+gap: 16px;
+display: flex;
+flex-direction: column;
+
+}
+
+.innerDesText1{
+  /* border: 2px solid yellow; */
+  width: 373px;
+height: 136px;
+gap: 16px;
+display: flex;
+flex-direction: column;
+
+
+}
+
+.fechedPart {
+  /* border: 2px solid red; */
+  width: 199px;
+height: 51px;
+
+}
+
+.fechedPart p{
+  font-family: 'Rajdhani';
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: rgba(42, 39, 39, 1);
+  
+}
+
+.omini{
+  /* border: 2px solid red; */
+  width: 158px;
+height: 16px;
+background-color: rgba(2, 125, 106, 0.1);
+
+}
+.omini p{
+  font-family: 'Inter';
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: -2%;
+text-transform: capitalize;
+color: rgba(2, 125, 106, 1);
+white-space: nowrap;
+
+}
+
+.plainPara p{
+  font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+color: rgba(58, 58, 58, 1);
+
+}
+
+.finish{
+  /* border: 2px solid red; */
+  width: 100px;
+height: 22px;
+opacity: 0.7;
+
+}
+
+.finish p{
+  font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: -2%;
+text-transform: capitalize;
+color: rgba(58, 58, 58, 1);
+
+}
+.result{
+  /* border: 2px solid red; */
+  width: 373px;
+height: 22px;
+
+}
+
+.result p{
+  font-family: 'Inter';
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: -2%;
+text-transform: capitalize;
+color: rgba(0, 0, 0, 1);
+font-size: small;
+
+}
+
+
+
+/* Tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .popup-container {
+    width: 90%;
+    height: auto;
+    padding: 32px;
+  }
+
+  .popup-content {
+    flex-direction: column;
+    height: auto;
+    gap: 32px;
+  }
+
+  #popupTitle,
+  #popupDescription {
+    width: 100%;
+    height: auto;
+  }
+
+  .innerDescription {
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+  }
+
+  .marbleBtn,
+  .textureBtn {
+    width: 100%;
+  }
+
+  .ElegantGray,
+  .plainPara,
+  .fechedPart,
+  .result,
+  .finish {
+    width: 100%;
+  }
+
+  .popupImageCard,
+  .popupImageCard1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .innerDesText,
+  .innerDesText1 {
+    width: 100%;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .popup-container {
+    width: 95%;
+    padding: 24px;
+    height: auto;
+  }
+
+  .popup-close {
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+  }
+
+  .popup-content {
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+  }
+
+  #popupTitle,
+  #popupDescription {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .innerDescription {
+    flex-direction: column;
+    gap: 16px;
+    height: auto;
+  }
+
+  .popupImageCard,
+  .popupImageCard1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .marbleBtn,
+  .textureBtn,
+  .ElegantGray,
+  .plainPara,
+  .fechedPart,
+  .result,
+  .finish,
+  .innerDesText,
+  .innerDesText1 {
+    width: 100%;
+  }
+
+  .textureBtn {
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+  .textureBtn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup-close {
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+  }
+
+  /* Fix for the property-value pairs */
+  .innerDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Hide the original columns */
+  .innerDesText, .innerDesText1 {
+    display: none;
+  }
+
+  /* Add a new container after the innerDescription for mobile layout */
+  .innerDescription::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  /* Create new property-value pairs for mobile */
+  .innerDescription::before {
+    content: "";
+    display: block;
+  }
+
+  /* Add mobile-friendly property-value pairs */
+  .mobilePropertyPairs {
+    display: block;
+  }
+
+  /* Individual property-value row */
+  .property-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .property-row .property-name {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .property-row .property-value {
+    text-align: right;
+    color: rgba(58, 58, 58, 0.8);
+  }
+
+  /* Mobile-specific styles for popup details */
+  .innerDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Change the layout of the description text containers */
+  .innerDesText, .innerDesText1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Create property-value pairs */
+  .innerDesText .margin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 8px;
+  }
+
+  /* Change the display of properties */
+  .innerDesText .margin p {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  /* Show values next to their properties */
+  .innerDesText .margin + .result {
+    display: none; /* Hide standalone value containers */
+  }
+
+  /* Create combined property-value rows */
+  .property-value-pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  /* Display finish label with its value side by side */
+  .finish-container, .colors-container, .type-container, .app-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+
+/* Mobile First - for devices up to 768px */
+@media screen and (max-width: 768px) {
+  .popup-container {
+    width: 90%;
+    height: 90vh;
+    padding: 24px 16px;
+    overflow-y: auto;
+    border-radius: 6px;
+  }
+
+  .popup-content {
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+  }
+
+  #popupTitle,
+  #popupDescription {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .popupImageCard,
+  .popupImageCard1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .popup-full-image {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .theDescriptionCard,
+  .innerDescription,
+  .marbleBtn,
+  .textureBtn,
+  .ElegantGray,
+  .plainPara,
+  .innerDesText,
+  .innerDesText1,
+  .fechedPart,
+  .omini,
+  .result,
+  .finish {
+    width: 100%;
+    height: auto;
+  }
+
+  .textureBtn {
+    font-size: 14px;
+    padding: 12px 24px;
+    width: 100%;
+  }
+
+  .textureBtn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup-close {
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+  }
+}
+
+
+
