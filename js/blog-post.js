@@ -6,11 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('header-container').innerHTML = data;
       });
       
-    fetch('components/navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-      });
+   
 
     fetch('components/footer.html')
       .then(response => response.text())
@@ -79,7 +75,7 @@ There’s a composure in the material — a tactile calm. Its surfaces don’t s
         '3': {
             layout: 'layout3',
             headerText: "Omani Marble: The Ultimate Luxury for Exclusive Spaces",
-            headerText1: "Uniquely Crafted by Nature",
+            headerText1: "Omani Marble: The Ultimate Luxury for Exclusive Spaces",
             headerText2: 'The Essence of Timeless Elegance',
             headerText3: 'Tradition and Innovation Harmonized',
             headerText4: 'A Statement of Exclusivity',
@@ -315,7 +311,7 @@ There’s a composure in the material — a tactile calm. Its surfaces don’t s
     else if (blog.layout === 'layout3') {
         contentContainer.innerHTML = `
              <div class="blog-post-containerss">
-              <div class="blog-post-header">
+              <div class="blog-post-header1">
                         <p>${blog.headerText}</p>
               </div>
 

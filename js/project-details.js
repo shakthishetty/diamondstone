@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-container').innerHTML = data;
+        // Initialize up arrow after footer is loaded
+        initializeUpArrow();
       });
       
     // Get the project ID from URL parameter
@@ -24,6 +26,80 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Load project details based on ID
     loadProjectDetails(projectId || '1');
+    
+    // Initialize up arrow functionality
+    initializeUpArrow();
+});
+
+function initializeUpArrow() {
+    console.log('Initializing up arrow functionality');
+    
+    // Wait a bit to ensure elements are loaded
+    setTimeout(() => {
+        // Get up arrow elements
+        const upArrows = document.querySelectorAll('.upArrow1, .upArrow2');
+        
+        upArrows.forEach(arrow => {
+            if (arrow) {
+                arrow.style.cursor = 'pointer';
+                arrow.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    console.log('Up arrow clicked - scrolling to project details');
+                    
+                    // Scroll to project details section
+                    const projectDetailsSection = document.querySelector('.project-details-section') || 
+                                                document.querySelector('.project-details') ||
+                                                document.querySelector('#project-details-container');
+                    
+                    if (projectDetailsSection) {
+                        projectDetailsSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    } else {
+                        // Fallback: scroll to top
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    }, 500);
+}
+
+// Also add click event listener for up arrows using event delegation
+document.addEventListener('click', function(event) {
+    const clickedElement = event.target;
+    
+    // Check if clicked element is the up arrow or inside it
+    const upArrow = clickedElement.closest('.upArrow1, .upArrow2');
+    if (upArrow) {
+        event.preventDefault();
+        event.stopPropagation();
+        console.log('Up arrow clicked via delegation - scrolling to project details');
+        
+        // Scroll to project details section
+        const projectDetailsSection = document.querySelector('.project-details-section') || 
+                                    document.querySelector('.project-details') ||
+                                    document.querySelector('#project-details-container');
+        
+        if (projectDetailsSection) {
+            projectDetailsSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        } else {
+            // Fallback: scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        return;
+    }
 });
 
 function loadProjectDetails(projectId) {
@@ -56,7 +132,7 @@ function loadProjectDetails(projectId) {
             title: 'Qasr Al Hosn',
             location: 'Abu Dhabi',
             description: 'Within Qasr Al Hosn\'s timeless walls, touches of our Omani marble quietly echo heritage and refined beauty.',
-            mainImage: './assets/images/1 (1).png',
+            mainImage: './assets/images/building.jpg',
             material: 'Desert Rose',
             applicationArea: 'Wall Cladding and Flooring, Large Marble Blocks',
             finish: 'Honed, Polished',
@@ -100,7 +176,7 @@ function loadProjectDetails(projectId) {
             title: 'Saadiyat Island',
             location: 'Abu Dhabi',
             description: 'A solemn tribute in stone, the Founders Memorial stands as a timeless symbol of legacy, leadership, and national pride.',
-            mainImage: './assets/images/resedentialApplication.png',
+            mainImage: './assets/images/sadiyat.jpg',
             material: 'Desert Rose',
             applicationArea: 'Interior walls, flooring, countertops, facade',
             finish: 'Polished, Honed',
@@ -156,7 +232,12 @@ function loadProjectDetails(projectId) {
                 </div>
                 
                 <div class="project-image-details">
-                    <img src="${project.mainImage}" alt="${project.title}">
+                    <img src="${project.mainImage}" 
+                         alt="${project.title}"
+                         loading="eager"
+                         decoding="async"
+                         fetchpriority="high"
+                         style="image-rendering: auto; image-rendering: high-quality;">
                 </div>
 
                 <div class="project-content-details">
@@ -198,7 +279,12 @@ function loadProjectDetails(projectId) {
                     <div class="project-moreImage-card">
                         ${project.additionalImages.map(img => `
                             <div class="project-moreImage-card1">
-                                <img src="${img}" alt="${project.title} detail">
+                                <img src="${img}" 
+                                     alt="${project.title} detail"
+                                     loading="lazy"
+                                     style="opacity: 0; transition: opacity 0.3s ease;"
+                                     onload="this.style.opacity = 1;"
+                                     onerror="this.style.display = 'none';">
                             </div>
                         `).join('')}
                     </div>
@@ -241,7 +327,12 @@ function loadProjectDetails(projectId) {
                 </div>
                 
                 <div class="project-image-details">
-                    <img src="${project.mainImage}" alt="${project.title}">
+                    <img src="${project.mainImage}" 
+                         alt="${project.title}"
+                         loading="eager"
+                         decoding="async"
+                         fetchpriority="high"
+                         style="image-rendering: auto; image-rendering: high-quality;">
                 </div>
 
                 <div class="project-content-details">
@@ -283,7 +374,12 @@ function loadProjectDetails(projectId) {
                     <div class="project-moreImage-card">
                         ${project.additionalImages.map(img => `
                             <div class="project-moreImage-card1">
-                                <img src="${img}" alt="${project.title} detail">
+                                <img src="${img}" 
+                                     alt="${project.title} detail"
+                                     loading="lazy"
+                                     style="opacity: 0; transition: opacity 0.3s ease;"
+                                     onload="this.style.opacity = 1;"
+                                     onerror="this.style.display = 'none';">
                             </div>
                         `).join('')}
                     </div>
@@ -326,7 +422,12 @@ function loadProjectDetails(projectId) {
                 </div>
                 
                 <div class="project-image-details">
-                    <img src="${project.mainImage}" alt="${project.title}">
+                    <img src="${project.mainImage}" 
+                         alt="${project.title}"
+                         loading="eager"
+                         decoding="async"
+                         fetchpriority="high"
+                         style="image-rendering: auto; image-rendering: high-quality;">
                 </div>
 
                 <div class="project-content-details">
@@ -368,7 +469,12 @@ function loadProjectDetails(projectId) {
                     <div class="project-moreImage-card">
                         ${project.additionalImages.map(img => `
                             <div class="project-moreImage-card1">
-                                <img src="${img}" alt="${project.title} detail">
+                                <img src="${img}" 
+                                     alt="${project.title} detail"
+                                     loading="lazy"
+                                     style="opacity: 0; transition: opacity 0.3s ease;"
+                                     onload="this.style.opacity = 1;"
+                                     onerror="this.style.display = 'none';">
                             </div>
                         `).join('')}
                     </div>
@@ -412,7 +518,12 @@ function loadProjectDetails(projectId) {
                 </div>
                 
                 <div class="project-image-details">
-                    <img src="${project.mainImage}" alt="${project.title}">
+                    <img src="${project.mainImage}" 
+                         alt="${project.title}"
+                         loading="eager"
+                         decoding="async"
+                         fetchpriority="high"
+                         style="image-rendering: auto; image-rendering: high-quality;">
                 </div>
 
                 <div class="project-content-details">
@@ -454,7 +565,12 @@ function loadProjectDetails(projectId) {
                     <div class="project-moreImage-card">
                         ${project.additionalImages.map(img => `
                             <div class="project-moreImage-card1">
-                                <img src="${img}" alt="${project.title} detail">
+                                <img src="${img}" 
+                                     alt="${project.title} detail"
+                                     loading="lazy"
+                                     style="opacity: 0; transition: opacity 0.3s ease;"
+                                     onload="this.style.opacity = 1;"
+                                     onerror="this.style.display = 'none';">
                             </div>
                         `).join('')}
                     </div>
@@ -475,6 +591,11 @@ function loadProjectDetails(projectId) {
     
     // Update the "More projects" section
     updateMoreProjects(projectId, projectData);
+
+    // Just add the up arrow initialization at the end
+    setTimeout(() => {
+        initializeUpArrow();
+    }, 100);
 }
 
 function updateMoreProjects(currentProjectId, projectData) {
@@ -509,7 +630,7 @@ function updateMoreProjects(currentProjectId, projectData) {
                             </div>   
                             
                             <div class="latest-project-inner-content1">
-                                <p>${project.material}, ${project.finish}</p>
+                                <p>Omani Pearl, Polished</p>
                             </div>
                         </div>
                         <div class="latest-project-inner-card1">

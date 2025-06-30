@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('finishes-container').innerHTML = data;
+            initVeinAnimations();
         });
 
         fetch('components/whyChooseUs.html')
@@ -64,6 +65,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('blogs-container').innerHTML = data;
+            if (window.initializeBlogsSlider) {
+                initializeBlogsSlider();
+            }
+            if (window.initializeBlogCardClicks) {
+                initializeBlogCardClicks();
+            }
         });
 
         fetch('components/resources.html')

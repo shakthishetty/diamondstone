@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Diamond Stone</title>
+  <title>DiamondStone</title>
  
   <!-- Same CSS imports as your index.html -->
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -10,11 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="syles.css">
-  <link rel="stylesheet" href="css/navbar.css" />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/header.css" />
   <!-- <link rel="stylesheet" href="css/footer.css" /> -->
   <link rel="stylesheet" href="css/blog-post.css" />
+   <link rel="stylesheet" href="css/collection-details.css">
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/aboutUs.css">
+  <link rel="stylesheet" href="css/footer.css" />
   <!-- Add a specific CSS for blog posts -->
  
 </head>
@@ -22,8 +27,28 @@
 
   <!-- Same component containers for header and navbar -->
   <div class="wrapper">
-    <div id="header-container"></div>
-    <div id="navbar-container"></div>
+     <nav class="collection-details">
+      <div class="collection-details-image">
+         <img src="./assets/images/diamondStone (2).png" alt="" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="collection-details-content">
+        <div class="marble-content">
+          <p class="nav-link" data-scroll="collection">Marble & Collections</p>
+        </div>
+        <div class="marble-content1">
+          <p class="nav-link" data-scroll="whyChooseUsSection">House of Diamond Stone</p>
+        </div>
+        <div class="marble-content">
+          <p class="nav-link" data-scroll="project">Projects & Showcase</p>
+        </div>
+      </div>
+      <button class="mobile-hamburger" aria-label="Open menu">
+        <img src="./assets/icons/radix-icons_hamburger-menu.png" alt="Menu"
+      class="hamburger-icon" />
+      </button>
+    </nav>
+    
     
     <!-- Blog post content will go here -->
       
@@ -102,67 +127,14 @@
                   </div>
              </div>
        </div> 
-       <section class="Footer1">
-        <div class="innerFooter1">
-          <div class="stone1">
-            <img src="./assets/images/diamondStone (2).png" alt="Diamond Stone Logo" />
-          </div>
-          <div class="stone2">
-            <p>SOCIAL MEDIA</p>
-            <div style="display: flex; gap: 10px; margin-top: 10px; color: rgba(58, 58, 58, 0.6);" class="social-media">
-              <!-- Replace these spans with actual icon tags if using Font Awesome -->
-              <span><img src="./assets/images/whatsapp.png" alt=""></span>
-              <span><img src="./assets/images/linkedin.png" alt=""></span>
-              <span><img src="./assets/images/twitter.png" alt=""></span>
-            </div>
-          </div>
-        </div>
       
-        <div class="innerFooter2">
-          <div class="foot1">
-            <h4>Quick links</h4>
-            <p>Home</p>
-            <p>Our Marble Collection</p>
-            <p>Applications</p>
-            <p>Finishes</p>
-            <p>About us</p>
-            <p>Certifications</p>
-            <p>Projects</p>
-            <p>Blogs</p>
-          </div>
-      
-          <div class="foot2">
-            
-      
-            <div>
-              <h4>Address</h4>
-              <p style="margin-top: 10px;">
-                Diamond stone trading and services spc<br />
-                po box 1280, Ptc 111, Central post office, Muscat, Oman<br />
-                office no 615, Tower 1, Tathmeer, Muscat hills, Oman
-              </p>
-            </div>
-      
-            <div style="margin-top: 20px;" class="phoneee">
-              <h4>Phone</h4>
-              <p style="margin-top: 10px;">+968 920 99 729</p>
-            </div>
-
-            <div class="upArrow1">
-                <div class="upArrow2">
-
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
       
 
       
         
 
       
-       <!-- <div id="footer-container"></div> -->
+       <div id="footer-container"></div>
     <!-- Footer can be added later -->
   </div>
 
@@ -172,5 +144,8 @@
   <!-- Same JS files as in index.html for navbar functionality -->
   <script src="js/navbar.js" defer></script>
   <script src="js/blog-post.js" defer></script>
+  <script src="js/scroll.js" defer></script>
+    <script src="js/about.js" defer></script>
+
 </body>
 </html>

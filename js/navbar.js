@@ -1,64 +1,105 @@
 // First load the navbar component
 
 document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM content loaded");
+  
   // Check if we're loading navbar as a component
   const navbarContainer = document.getElementById('navbar-container');
   
   if (navbarContainer) {
+    console.log("Found navbar container, loading component");
     // If using component loading, wait for navbar to load before initializing
     fetch('./components/navbar.html')
       .then(response => response.text())
       .then(data => {
         navbarContainer.innerHTML = data;
         // Initialize AFTER navbar is loaded
-        initNavbarDropdown();
-        initHamburgerMenu();
-        initFixedNavbar();
+        console.log("Navbar component loaded, initializing functions");
+        setTimeout(() => {
+          initAllNavbarFunctions();
+        }, 100); // Small delay to ensure DOM is updated
       })
       .catch(error => console.error("Error loading navbar:", error));
   } else {
     // If navbar is directly in page, initialize immediately
-    initNavbarDropdown();
-    initHamburgerMenu();
-    initFixedNavbar();
+    console.log("No navbar container found, assuming navbar is already in page");
+    setTimeout(() => {
+      initAllNavbarFunctions();
+    }, 100);
   }
 });
 
+function initAllNavbarFunctions() {
+  console.log("Initializing all navbar functions");
+  initNavbarDropdown();
+  initHamburgerMenu();
+  initFixedNavbar();
+}
+
 function initHamburgerMenu() {
-  const hamburgerIcon = document.getElementById("hamburgerIcon");
-  const mobileDropdown = document.getElementById("mobileDropdown");
+  // Target multiple possible selectors to find the hamburger button
+  const hamburgerIcon = document.querySelector(".hamburger-icon") || 
+                        document.querySelector("[id^='hamburger']") ||
+                        document.querySelector(".hamburger");
+                        
+  // Target multiple possible selectors to find the mobile dropdown
+  const mobileDropdown = document.querySelector(".mobile-dropdown") || 
+                         document.querySelector("[id^='mobileDropdown']");
   
-  console.log("Hamburger icon:", hamburgerIcon);
-  console.log("Mobile dropdown:", mobileDropdown);
+  console.log("Finding hamburger elements:");
+  console.log("- Hamburger icon found:", hamburgerIcon ? "YES" : "NO");
+  console.log("- Mobile dropdown found:", mobileDropdown ? "YES" : "NO");
   
   // Check if elements exist before adding event listeners
   if (hamburgerIcon && mobileDropdown) {
-    // Save the original HTML with the image
+    console.log("Setting up hamburger menu click handlers");
+    
+    // Save the original HTML with the image if it exists
     const originalHTML = hamburgerIcon.innerHTML;
     
-    hamburgerIcon.addEventListener("click", (e) => {
-      console.log("Hamburger clicked");
-      e.stopPropagation(); // Prevent document click from immediately closing menu
-      
-      // Toggle between original image and X icon
-      if (hamburgerIcon.querySelector('img')) {
-        hamburgerIcon.innerHTML = '<i class="fa-solid fa-times" style="font-size: 24px;"></i>';
-        console.log("Changed to X icon");
-      } else {
+    hamburgerIcon.addEventListener("click", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    
+      const isOpen = mobileDropdown.classList.contains("open");
+    
+      if (isOpen) {
+        // Closing
         hamburgerIcon.innerHTML = originalHTML;
-        console.log("Changed back to original image");
+      } else {
+        // Opening
+        hamburgerIcon.innerHTML = '<i class="fa-solid fa-times" style="font-size: 24px;"></i>';
       }
-      
+    
       mobileDropdown.classList.toggle("open");
     });
-
-    // Close when clicking outside the menu
+    
+    // Close menu when clicking on menu items
+    const menuLinks = mobileDropdown.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        console.log("Menu link clicked - closing menu");
+        mobileDropdown.classList.remove("open");
+        hamburgerIcon.classList.remove("active");
+        hamburgerIcon.innerHTML = originalHTML; // Reset to original hamburger icon
+      });
+    });
+    
+    // Close when clicking anywhere else
     document.addEventListener("click", function(e) {
-      if (!e.target.closest("#hamburgerIcon") && !e.target.closest("#mobileDropdown")) {
+      if (mobileDropdown.classList.contains("open") && 
+          !hamburgerIcon.contains(e.target) && 
+          !mobileDropdown.contains(e.target)) {
+        
+        console.log("Clicked outside menu, closing dropdown");
         mobileDropdown.classList.remove("open");
         hamburgerIcon.innerHTML = originalHTML;
       }
     });
+    
+  } else {
+    console.error("Hamburger menu setup failed - missing required elements");
+    console.log("DOM structure:", document.body.innerHTML);
   }
 }
 

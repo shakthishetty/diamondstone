@@ -25,19 +25,43 @@
   
   /* Blog Post Header */
   .blog-post-header {
-    margin-top: 50px;
+    /* border: 2px solid red; */
+    margin-top: 82px;
     max-width: 1003px;
     width: 100%;
     height: auto;
     gap: 16px;
+    margin-right: 30px;
+  }
+
+  .blog-post-header1 {
+    border: 2px solid transparent;
+    margin-top: 82px;
+    max-width: 1003px;
+    width: 100%;
+    height: auto;
+    gap: 16px;
+    margin-right: 30px;
   }
   
   .blog-post-header p {
-    font-family: 'Rajdhani';
+    color: #3A3A3A;
+    font-family: 'Orbitron';
+    font-size: 44px;
+    font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 100%;
-    color: rgba(58, 58, 58, 1);
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .blog-post-header1 p {
+    color: #3A3A3A;
+    font-family: 'Orbitron';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* white-space: nowrap; */
   }
   
   /* Blog Content Sections */
@@ -94,11 +118,12 @@
   
   /* Image Styles */
   .blog-post-image {
+    /* border: 2px solid red; */
     width: 100%;
     max-width: 1030px;
     height: auto;
     aspect-ratio: 16/9;
-    border-radius: 6px;
+    border-radius: 8px !important;
     object-fit: cover;
   }
   
@@ -255,10 +280,12 @@
   
   .content-para-card p,
   .content-para-card1 p {
-    font-family: 'Helvetica Neue';
-    font-size: 16px;
-    line-height: 100%;
-    color: rgba(58, 58, 58, 1);
+    color: #3A3A3A;
+font-family: 'Inter';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
   }
   
   .content-para-card {
@@ -296,11 +323,32 @@
   
   @media (max-width: 768px) {
     .blog-post-header {
+      /* border: 2px solid red; */
+      width: 100%;
+    
       margin-top: 30px;
+
+      margin-left: 25px;
+    }
+
+    .blog-post-header1{
+      /* border: 2px solid red; */
+      width: 100%;
+      height: 38px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      
     }
     
     .blog-post-header p {
-      font-size: 32px;
+      /* border: 2px solid red; */
+      font-size: 22px;
+      white-space: wrap !important;
+    }
+
+    .blog-post-header1 p{
+      font-size: 22px;
+      white-space: wrap !important;
     }
     
     .blog-post-para1-content p,
@@ -461,7 +509,14 @@ line-height: 100%;
 letter-spacing: 0%;
 vertical-align: middle;
  color: rgba(58, 58, 58, 0.6);
+ cursor: pointer;
+    transition: color 0.2s ease;
 
+}
+
+.foot p:hover, .foot1 p:hover, .foot2 p:hover {
+  transition: color 0.2s ease;
+ 
 }
 
 .foot2{
@@ -503,6 +558,7 @@ background-color: rgba(2, 125, 106, 1);
 display: flex;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 
 }
 

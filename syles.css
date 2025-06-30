@@ -1,20 +1,11 @@
 /* Hide scrollbar for all elements while maintaining functionality */
-html {
-  scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar {
-  display: none;
-}
 
 
 .wrapper {
   min-height: 100vh;
   height: auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
 }
 
@@ -22,9 +13,3 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
